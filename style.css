@@ -1,12 +1,3 @@
-/* =========================================================
-   POKÉDECK — ESTILO POKÉMON FIRE RED
-   ========================================================= */
-
-
-/* =========================
-   FONTES / RESET
-   ========================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
@@ -37,11 +28,6 @@ body {
 
     image-rendering: pixelated;
 }
-
-
-/* =========================
-   HEADER
-   ========================= */
 
 header {
     width: min(1100px, 94%);
@@ -82,20 +68,10 @@ header p {
     color: #444;
 }
 
-
-/* =========================
-   CONTAINER PRINCIPAL
-   ========================= */
-
 main {
     width: min(1100px, 94%);
     margin: 0 auto 40px;
 }
-
-
-/* =========================
-   PAINÉIS / SEÇÕES
-   ========================= */
 
 section {
     margin-bottom: 24px;
@@ -111,11 +87,6 @@ section {
         0 5px 0 #777,
         0 8px 12px rgba(0, 0, 0, 0.2);
 }
-
-
-/* =========================
-   MÁQUINA
-   ========================= */
 
 .machine {
     position: relative;
@@ -216,11 +187,6 @@ section {
     color: #ffeaea;
 }
 
-
-/* =========================
-   BOTÃO DA MÁQUINA
-   ========================= */
-
 #rollButton {
     min-width: 240px;
 
@@ -274,11 +240,6 @@ section {
     opacity: 0.8;
 }
 
-
-/* =========================
-   TÍTULOS DAS SEÇÕES
-   ========================= */
-
 .section-title {
     display: flex;
 
@@ -318,11 +279,6 @@ section {
     white-space: nowrap;
 }
 
-
-/* =========================
-   GRID DOS POKÉMON
-   ========================= */
-
 .pokemon-grid {
     display: grid;
 
@@ -333,11 +289,6 @@ section {
 
     gap: 16px;
 }
-
-
-/* =========================
-   CARTA DO POKÉMON
-   ========================= */
 
 .pokemon-card {
     position: relative;
@@ -380,11 +331,6 @@ section {
         0 12px 15px rgba(0, 0, 0, 0.18);
 }
 
-
-/* =========================
-   NÚMERO DO POKÉMON
-   ========================= */
-
 .pokemon-number {
     align-self: flex-start;
 
@@ -400,11 +346,6 @@ section {
 
     font-size: 0.48rem;
 }
-
-
-/* =========================
-   BOTÃO DE CADEADO
-   ========================= */
 
 .lock-button {
     position: absolute;
@@ -448,11 +389,6 @@ section {
         0 0 0 #777;
 }
 
-
-/* =========================
-   CARTA TRANCADA
-   ========================= */
-
 .pokemon-card.locked {
     background:
         linear-gradient(
@@ -489,11 +425,6 @@ section {
     font-size: 0.42rem;
 }
 
-
-/* =========================
-   IMAGEM DO POKÉMON
-   ========================= */
-
 .pokemon-card img {
     width: 130px;
     height: 130px;
@@ -508,11 +439,6 @@ section {
         drop-shadow(0 4px 2px rgba(0, 0, 0, 0.2));
 }
 
-
-/* =========================
-   NOME DO POKÉMON
-   ========================= */
-
 .pokemon-name {
     margin-top: 3px;
 
@@ -524,11 +450,6 @@ section {
 
     color: #242424;
 }
-
-
-/* =========================
-   TIPOS
-   ========================= */
 
 .types {
     display: flex;
@@ -560,11 +481,6 @@ section {
         1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-
-/* =========================
-   DECK
-   ========================= */
-
 .deck-section {
     background:
         linear-gradient(
@@ -586,11 +502,6 @@ section {
 
     min-height: 100px;
 }
-
-
-/* =========================
-   CARTA DO DECK
-   ========================= */
 
 .deck-card {
     position: relative;
@@ -663,11 +574,6 @@ section {
     font-weight: bold;
 }
 
-
-/* =========================
-   DECK VAZIO
-   ========================= */
-
 .empty-deck {
     grid-column: 1 / -1;
 
@@ -685,11 +591,6 @@ section {
     font-weight: bold;
 }
 
-
-/* =========================
-   FOOTER
-   ========================= */
-
 footer {
     width: min(1100px, 94%);
 
@@ -705,11 +606,6 @@ footer {
 
     font-weight: bold;
 }
-
-
-/* =========================
-   RESPONSIVIDADE
-   ========================= */
 
 @media (max-width: 600px) {
 
@@ -787,7 +683,6 @@ footer {
     }
 
 }
-
 
 @media (max-width: 380px) {
 
