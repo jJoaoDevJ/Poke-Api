@@ -167,21 +167,29 @@ function renderPokemons() {
 // Trancar / destrancar
 function toggleLock(index) {
 
+    const pokemon = pokemons[index];
+
+
+    // Se já estiver trancado, destranca
     if (lockedPokemon.has(index)) {
 
         lockedPokemon.delete(index);
 
-    } else {
+        removeFromDeck(pokemon);
+
+    }
+
+    // Se estiver destrancado, tranca
+    else {
 
         lockedPokemon.add(index);
 
-        addToDeck(pokemons[index]);
+        addToDeck(pokemon);
 
     }
 
 
     renderPokemons();
-
     renderDeck();
 
 }
@@ -194,11 +202,21 @@ function addToDeck(pokemon) {
     const alreadyInDeck =
         deck.some(item => item.id === pokemon.id);
 
+
     if (!alreadyInDeck) {
 
         deck.push(pokemon);
 
     }
+
+}
+
+
+// Remove Pokémon do deck
+function removeFromDeck(pokemon) {
+
+    deck =
+        deck.filter(item => item.id !== pokemon.id);
 
 }
 
@@ -276,7 +294,9 @@ async function rollMachine() {
                 Promise.resolve(pokemons[i])
             );
 
-        } else {
+        }
+
+        else {
 
             promises.push(
                 getPokemon(
@@ -321,6 +341,7 @@ async function initialize() {
 
 
     const promises = [];
+
 
     for (let i = 1; i <= 10; i++) {
 
