@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PokéDeck - Roleta Pokémon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>PokéDeck</h1>
+        <p>Monte seu deck de Pokémon!</p>
+    </header>
+
+    <main>
+
+        <section class="machine">
+
+            <div class="machine-title">
+                <span>🎰</span>
+                <h2>Máquina Pokémon</h2>
+            </div>
+
+            <p>Gire a máquina para sortear novos Pokémon!</p>
+
+            <button id="rollButton">
+                🎰 ROLAR POKÉMON
+            </button>
+
+        </section>
+
+
+        <section>
+
+            <div class="section-title">
+                <h2>Pokémon Sorteados</h2>
+
+                <span id="counter">
+                    0 / 10
+                </span>
+            </div>
+
+            <div id="pokemonContainer" class="pokemon-grid">
+
+        
+            </div>
+
+        </section>
+
+
+    
+        <section class="deck-section">
+
+            <div class="section-title">
+
+                <h2>🃏 Meu Deck</h2>
+
+                <span id="deckCounter">
+                    0 Pokémon
+                </span>
+
+            </div>
+
+            <div id="deckContainer" class="deck">
+
+                <p class="empty-deck">
+                    🔒 Tranque um Pokémon para adicioná-lo ao seu deck.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Dados fornecidos pela PokéAPI</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
